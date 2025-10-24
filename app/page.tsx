@@ -4,7 +4,7 @@ import { ProfileTab } from "@/components/shared/ProfileTab";
 export default function Home() {
   return (
     <div className="py-10 md:px-auto md:px-6 px-2">
-      <div className="md:flex gap-10 justify-between">
+      <div className="md:flex lg:gap-10 gap-4 justify-between">
         <div
           className="w-full rounded-2xl"
           style={{

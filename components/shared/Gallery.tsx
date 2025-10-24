@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const images = [
@@ -8,6 +11,13 @@ const images = [
 ];
 
 const GallerySection = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleFileChange = (e: any) => {
+    const file = e?.target?.files[0];
+    if (file) {
+      console.log("Selected image:", file);
+    }
+  };
   return (
     <div
       className="bg-gray-700 my-5 p-6 rounded-2xl w-full max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto relative"
@@ -22,15 +32,27 @@ const GallerySection = () => {
         </button>
 
         <div className="flex items-center md:gap-4 gap-2">
-          <button
-            className="bg-gray-700 p-3 md:px-4 px-2 rounded-full transition-all font-bold md:mr-7 mr-2 text-white text-xs"
-            style={{
-              boxShadow:
-                "0 -1px 3px rgba(255,255,255,0.6), 10px 8px 12px rgba(0,0,0,0.6)",
-            }}
-          >
-            + ADD IMAGE
-          </button>
+          <div>
+            {/* Hidden file input */}
+            <input
+              type="file"
+              accept="image/*"
+              id="upload-image"
+              className="hidden"
+              onChange={handleFileChange}
+            />
+
+            <label
+              htmlFor="upload-image"
+              className="bg-gray-700 p-3 md:px-4 px-2 rounded-full transition-all font-bold md:mr-7 mr-2 text-white text-xs cursor-pointer hover:scale-105"
+              style={{
+                boxShadow:
+                  "0 -1px 3px rgba(255,255,255,0.6), 10px 8px 12px rgba(0,0,0,0.6)",
+              }}
+            >
+              + ADD IMAGE
+            </label>
+          </div>
 
           <button
             className="bg-[#2b2e38] p-2 rounded-full transition-all hover:bg-gray-900"
