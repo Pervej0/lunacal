@@ -70,5 +70,5 @@ Software Developer
 
 📁 **Portfolio:** [https://mdpervejhossain.me](https://mdpervejhossain.me)  
 💼 **LinkedIn:** [https://www.linkedin.com/in/md-pervej-hossain/](https://www.linkedin.com/in/md-pervej-hossain/)  
-🐙 **GitHub:** [https://github.com/your-username](https://github.com/Pervej0)  
-📧 **Email:** [mdpervejhossain0@gmail.com]
+🐙 **GitHub:** [https://github.com/Pervej0](https://github.com/Pervej0)  
+📧 **Email:** mdpervejhossain0@gmail.com
