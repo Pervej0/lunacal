@@ -50,11 +50,13 @@ npm run
 
 ## 📂 Getting Started
 
+```
 ├── components/ # Reusable UI components
 ├── pages/ # Application routes
 ├── public/ # Static assets (images, icons, etc.)
 ├── styles/ # Global styles and Tailwind configuration
 └── package.json # Project dependencies and scripts
+```
 
 🌐 Deployment
 
